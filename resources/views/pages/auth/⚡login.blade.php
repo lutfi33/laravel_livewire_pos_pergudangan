@@ -55,8 +55,8 @@ new class extends Component {
     <div class="w-full max-w-md bg-white shadow-xl rounded-2xl p-8">
 
         <div class="text-center mb-8">
-            <h2 class="text-3xl font-bold text-slate-800">Welcome Back 👋</h2>
-            <p class="text-slate-500 text-sm mt-2">Please login to your account</p>
+            <h2 class="text-3xl font-bold text-slate-800">Selamat Datang 👋</h2>
+            <p class="text-slate-500 text-sm mt-2">Login dengan akunmu</p>
         </div>
 
         <form class="space-y-5" wire:submit.prevent="login">
@@ -79,26 +79,26 @@ new class extends Component {
                 @enderror
             </div>
 
-            <div class="flex items-center justify-between text-sm">
+            {{-- <div class="flex items-center justify-between text-sm">
                 <label class="flex items-center gap-2">
                     <input type="checkbox" wire:model="remember"
                         class="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500">
                     Remember me
                 </label>
                 <a href="#" class="text-indigo-600 hover:underline">Forgot password?</a>
-            </div>
+            </div> --}}
 
             <button type="submit"
-                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition duration-200">
+                class="w-full cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition duration-200">
                 Login
             </button>
 
         </form>
-
+{{-- 
         <p class="text-center text-sm text-slate-500 mt-6">
             Don't have an account?
             <a href="#" class="text-indigo-600 font-medium hover:underline">Register</a>
-        </p>
+        </p> --}}
 
     </div>
 </div>

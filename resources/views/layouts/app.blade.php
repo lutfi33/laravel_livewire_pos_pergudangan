@@ -7,6 +7,8 @@
 
     <title>{{ $title ?? config('app.name') }}</title>
 
+    <link rel="shortcut icon" href="{{ asset('logo.png') }}" type="image/x-icon">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @livewireStyles
@@ -37,6 +39,8 @@
                             class="text-slate-600 hover:text-indigo-600">Pembelian</a>
                         <a href="{{ route('admin.supplier') }}" wire:navigate
                             class="text-slate-600 hover:text-indigo-600">Supplier</a>
+                        <a href="{{ route('admin.setting') }}" wire:navigate
+                            class="text-slate-600 hover:text-indigo-600">Setting</a>
 
 
                         <form method="POST" action="{{ route('logout') }}"
